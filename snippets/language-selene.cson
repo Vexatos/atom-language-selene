@@ -1,0 +1,109 @@
+'.source.lua.sel':
+  'lambda (pars -> func)':
+    'prefix': 'lam'
+    'body': '(${1:parameters} -> ${2:func})'
+  'lambda (pars => func)':
+    'prefix': 'lams'
+    'body': '(${1:parameters} => ${2:func})'
+  'ternary (cond ? t : f)':
+    'prefix': 'ter'
+    'body': '(${1:condition} ? $2 : $3)'
+  'for k,v <- tbl do':
+    'prefix': 'fort'
+    'body': 'for ${1:k},${2:v} <- ${3:table_name} do\n\t${0:-- body...}\nend'
+  'shallowcopy':
+    'prefix': 'shallowcopy'
+    'body': 'table.shallowcopy(${1, t})'
+  'flatten':
+    'prefix': 'flatten'
+    'body': 'table.flatten(${1, t})'
+  ':concat':
+    'prefix': ':concat'
+    'body': ':concat(${1:sep [, start_index [, end_index]]})'
+  ':foreach':
+    'prefix': ':foreach'
+    'body': ':foreach(${1:func})'
+  ':map':
+    'prefix': ':map'
+    'body': ':map(${1:func})'
+  ':filter shortcut':
+    'prefix': ':fil'
+    'body': ':filter(${1:func})'
+  ':filter':
+    'prefix': ':filter'
+    'body': ':filter(${1:func})'
+  ':fold':
+    'prefix': ':fold'
+    'body': ':fold(${1:start_value}, ${2:func})'
+  ':foldleft':
+    'prefix': ':foldleft'
+    'body': ':foldleft(${1:start_value}, ${2:func})'
+  ':foldright':
+    'prefix': ':foldright'
+    'body': ':foldright(${1:start_value}, ${2:func})'
+  ':flip':
+    'prefix': ':flip'
+    'body': ':flip()'
+  ':find':
+    'prefix': ':find'
+    'body': ':find(${1:func})'
+  ':contains':
+    'prefix': ':contains'
+    'body': ':contains(${1:val})'
+  ':containskey':
+    'prefix': ':containskey'
+    'body': ':containskey(${1:key})'
+  ':count':
+    'prefix': ':count'
+    'body': ':count(${1:func})'
+  ':exists':
+    'prefix': ':exists'
+    'body': ':exists(${1:func})'
+  ':forall':
+    'prefix': ':forall'
+    'body': ':forall(${1:func})'
+  ':shallowcopy':
+    'prefix': ':shallowcopy'
+    'body': ':shallowcopy()'
+  ':drop':
+    'prefix': ':drop'
+    'body': ':drop(${1:n})'
+  ':dropright':
+    'prefix': ':dropright'
+    'body': ':dropright(${1:n})'
+  ':dropwhile':
+    'prefix': ':dropwhile'
+    'body': ':dropwhile(${1:func})'
+  ':take':
+    'prefix': ':take'
+    'body': ':take(${1:n})'
+  ':takeright':
+    'prefix': ':takeright'
+    'body': ':takeright(${1:n})'
+  ':takewhile':
+    'prefix': ':takewhile'
+    'body': ':takewhile(${1:func})'
+  ':reduce':
+    'prefix': ':reduce'
+    'body': ':reduce(${1:func})'
+  ':reduceleft':
+    'prefix': ':reduceleft'
+    'body': ':reduceleft(${1:func})'
+  ':reduceright':
+    'prefix': ':reduceright'
+    'body': ':reduceright(${1:func})'
+  ':reverse':
+    'prefix': ':reverse'
+    'body': ':reverse()'
+  ':flatten':
+    'prefix': ':flatten'
+    'body': ':flatten()'
+  ':zip':
+    'prefix': ':zip'
+    'body': ':zip(${1:other})'
+  ':split':
+    'prefix': ':split'
+    'body': ':split(${1:sep})'
+  ':iter':
+    'prefix': ':iter'
+    'body': ':iter()'

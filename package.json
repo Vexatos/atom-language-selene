@@ -1,0 +1,19 @@
+{
+  "name": "language-selene",
+  "version": "0.1.0",
+  "main": "libs/language-selene.coffee",
+  "author": "Vexatos",
+  "private": true,
+  "description": "Add syntax highlighting and snippets to Selene files in Atom",
+  "repository": "https://github.com/Vexatos/language-selene",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.50.0"
+  },
+  "dependencies": {
+    "atom-package-dependencies": "latest"
+  },
+  "package-dependencies": {
+    "language-lua": ">=0.9.4"
+  }
+}
