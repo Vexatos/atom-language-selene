@@ -1,6 +1,6 @@
 {
   "name": "language-selene",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "libs/language-selene.coffee",
   "author": "Vexatos",
   "private": true,

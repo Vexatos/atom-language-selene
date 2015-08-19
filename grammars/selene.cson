@@ -1,4 +1,4 @@
-'comment': 'Selene Syntax: Version 0.1.0'
+'comment': 'Selene Syntax: Version 0.1'
 'fileTypes': [
   'sel'
   'selene'
@@ -17,7 +17,7 @@
       '1':
         'name': 'variable.parameter.function.selene'
       '3':
-        'name': 'keyword.control.lua'
+        'name': 'keyword.control.selene'
     'name': 'meta.function.selene'
   }
   {
@@ -26,11 +26,11 @@
   }
   {
     'match': '(?<![^.]\\.|:)(checkArg|ltype|checkType|lpairs|isList|checkFunc|parCount|\\$f|\\$l|\\$s|\\$)(?=\\s*(?:[({"\']|\\[\\[))'
-    'name': 'support.function.lua'
+    'name': 'support.function.selene'
   }
   {
     'match': '(?<![^.]\\.|:)(bit32\\.(bfor|nfor)|string\\.(foreach|map|filter|contains|count|exists|forall|drop|dropright|dropwhile|take|takeright|takewhile|fold|foldleft|foldright|reduce|reduceleft|reduceright|split|iter)|table\\.(shallowcopy|flatten|range|flip|zipped))(?=\\s*(?:[({"\']|\\[\\[))'
-    'name': 'support.function.library.lua'
+    'name': 'support.function.library.selene'
   }
   {
     'include': 'source.lua'
