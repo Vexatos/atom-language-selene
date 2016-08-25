@@ -29,7 +29,7 @@
     'name': 'support.function.selene'
   }
   {
-    'match': '(?<![^.]\\.|:)(bit32\\.(bfor|nfor)|string\\.(foreach|map|filter|contains|count|exists|forall|drop|dropright|dropwhile|take|takeright|takewhile|fold|foldleft|foldright|reduce|reduceleft|reduceright|split|iter)|table\\.(shallowcopy|flatten|range|flip|zipped))(?=\\s*(?:[({"\']|\\[\\[))'
+    'match': '(?<![^.]\\.|:)(bit32\\.(bfor|nfor)|string\\.(foreach|map|filter|contains|count|exists|forall|drop|dropright|dropwhile|take|takeright|takewhile|fold|foldleft|foldright|reduce|reduceleft|reduceright|split|iter)|table\\.(shallowcopy|flatten|range|flip|zipped|clear|keys|values))(?=\\s*(?:[({"\']|\\[\\[))'
     'name': 'support.function.library.selene'
   }
   {
