@@ -5,6 +5,12 @@
   'lambda (pars => func)':
     'prefix': 'lams'
     'body': '(${1:parameters} => ${2:func})'
+  'lambda (pars! cond -> func)':
+    'prefix': 'lamc'
+    'body': '(${1:parameters}! ${2:condition} -> ${3:func})'
+  'lambda (pars! cond => func)':
+    'prefix': 'lamcs'
+    'body': '(${1:parameters}! ${2:condition} => ${3:func})'
   'ternary (cond ? t : f)':
     'prefix': 'ter'
     'body': '(${1:condition} ? $2 : $3)'
@@ -26,6 +32,9 @@
   ':map':
     'prefix': ':map'
     'body': ':map(${1:func})'
+  ':flatmap':
+    'prefix': ':flatmap'
+    'body': ':flatmap(${1:func})'
   ':filter shortcut':
     'prefix': ':fil'
     'body': ':filter(${1:func})'
@@ -119,3 +128,6 @@
   ':values':
     'prefix': ':values'
     'body': ':values()'
+  ':switch':
+    'prefix': ':switch'
+    'body': ':switch(${1:func})'

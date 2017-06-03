@@ -12,7 +12,14 @@
     'name': 'keyword.control.selene'
   }
   {
-    'match': '\\(\\s*([a-zA-Z_][\\w_]*(\\s*,\\s*[a-zA-Z_][\\w_]*)*)?\\s*([\\-\\=]\\>)'
+    'match': '\\(\\s*([a-zA-Z_][\\w_]*(\\s*,\\s*[a-zA-Z_][\\w_]*)*)?\\s*(?=[\\-\\=]\\>)'
+    'captures':
+      '1':
+        'name': 'variable.parameter.function.selene'
+    'name': 'meta.function.selene'
+  }
+  {
+    'match': '\\(\\s*([a-zA-Z_][\\w_]*(\\s*,\\s*[a-zA-Z_][\\w_]*)*)?\\s*(\\!)(?=[^\n]+([\\-\\=]\\>))'
     'captures':
       '1':
         'name': 'variable.parameter.function.selene'
@@ -21,15 +28,15 @@
     'name': 'meta.function.selene'
   }
   {
-    'match': '(\\?)'
+    'match': '(\\?|[\\-\\=]\\>|\\$\\$)'
     'name': 'keyword.control.selene'
   }
   {
-    'match': '(?<![^.]\\.|:)(checkArg|ltype|checkType|lpairs|isList|checkFunc|parCount|\\$f|\\$l|\\$s|\\$)(?=\\s*(?:[({"\']|\\[\\[))'
+    'match': '(?<![^.]\\.|:)(checkArg|ltype|checkType|lpairs|isList|checkFunc|parCount|switch|\\$f|\\$l|\\$s|\\$o|\\$)(?=\\s*(?:[({"\']|\\[\\=*\\[))'
     'name': 'support.function.selene'
   }
   {
-    'match': '(?<![^.]\\.|:)(bit32\\.(bfor|nfor)|string\\.(foreach|map|filter|contains|count|exists|forall|drop|dropright|dropwhile|take|takeright|takewhile|fold|foldleft|foldright|reduce|reduceleft|reduceright|split|iter)|table\\.(shallowcopy|flatten|range|flip|zipped|clear|keys|values))(?=\\s*(?:[({"\']|\\[\\[))'
+    'match': '(?<![^.]\\.|:)(bit32\\.(bfor|nfor)|string\\.(foreach|map|flatmap|filter|contains|count|exists|forall|drop|dropright|dropwhile|take|takeright|takewhile|fold|foldleft|foldright|reduce|reduceleft|reduceright|split|iter)|table\\.(shallowcopy|flatten|range|flip|zipped|clear|keys|values))(?=\\s*(?:[({"\']|\\[\\[))'
     'name': 'support.function.library.selene'
   }
   {
